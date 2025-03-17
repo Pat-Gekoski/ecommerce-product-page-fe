@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { ImageSelectorComponent } from '../../components/image-selector/image-selector.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [ImageSelectorComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
 })
-export class HomeComponent {
-
-}
+export class HomeComponent {}
