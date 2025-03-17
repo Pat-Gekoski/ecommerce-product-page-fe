@@ -68,11 +68,20 @@
   }
 
   :root {
-    body {
-      font-family: "Kumbh Sans", sans-serif;
-      font-size: var(--fs-500);
-      line-height: 2.6rem;
-      color: var(--clr-gray-900);
-    }
+    --header-height: 6.4rem;
+  }
+
+  body {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: var(--fs-500);
+    color: var(--clr-gray-900);
+    line-height: 2.6rem;
+  }
+}
+
+@layer layout {
+  .wrapper {
+    max-width: 110rem;
+    margin-inline: auto;
   }
 }
