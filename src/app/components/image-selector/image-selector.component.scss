@@ -1,0 +1,47 @@
+:host {
+  position: relative;
+}
+
+.selector {
+  position: relative;
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    &--main {
+      position: relative;
+      height: 30rem;
+      overflow: hidden;
+
+      .selected-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-white);
+
+    &--prev {
+      left: 1.6rem;
+    }
+
+    &--next {
+      right: 1.6rem;
+    }
+  }
+}
