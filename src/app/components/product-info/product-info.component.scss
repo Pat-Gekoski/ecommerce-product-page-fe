@@ -1,0 +1,25 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  &__company {
+    font-size: var(--font-subtitle);
+    color: var(--clr-gray-500);
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+  }
+
+  &__name {
+    line-height: 3.2rem;
+    font-size: var(--font-title);
+    color: var(--clr-gray-900);
+    font-style: bold;
+  }
+
+  &__description {
+    font-size: var(--font-body);
+    color: var(--clr-gray-500);
+  }
+}

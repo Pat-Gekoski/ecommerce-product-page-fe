@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ImageSelectorComponent } from '../../components/image-selector/image-selector.component';
+import { ProductInfoComponent } from '../../components/product-info/product-info.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ImageSelectorComponent],
+  imports: [ImageSelectorComponent, ProductInfoComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
