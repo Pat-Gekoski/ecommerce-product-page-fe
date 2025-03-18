@@ -13,9 +13,14 @@
 
   &__name {
     line-height: 3.2rem;
-    font-size: var(--font-title);
+    font-size: var(--font-title-sm);
     color: var(--clr-gray-900);
     font-style: bold;
+
+    @media (width > 992px) {
+      font-size: var(--font-title-lg);
+      line-height: 4.8rem;
+    }
   }
 
   &__description {
