@@ -49,6 +49,13 @@
     border-radius: 1rem;
     overflow: hidden;
 
+    &.selected {
+      border: 2px solid var(--clr-orange-500);
+      img {
+        opacity: 0.3;
+      }
+    }
+
     img {
       height: 100%;
       width: 100%;
@@ -68,6 +75,10 @@
     justify-content: center;
     align-items: center;
     background-color: var(--clr-white);
+
+    @media (width > 992px) {
+      display: none;
+    }
 
     &--prev {
       left: 1.6rem;
